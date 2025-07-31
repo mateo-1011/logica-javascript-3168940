@@ -19,7 +19,7 @@ let num2 = Number(prompt("Ingrese el segundo número:"));
 let resultado = num1 + num2;
 alert("La suma es: " + resultado); */
 
-//Pedir dos números con prompt
+/* //Pedir dos números con prompt
 const valorA = Number(prompt("Ingresa el valor A:"));
 const valorB = Number(prompt("Ingresa el valor B:"));
 
@@ -31,3 +31,6 @@ console.log(`La suma de "${valorA}" + "${valorB}" = "${valorA + valorB}"`);
 console.log(`La resta de "${valorB}" - "${valorA}" = "${valorB - valorA}"`);
 console.log(`La multiplicación de "${valorA}" * "${valorB}" = "${valorA * valorB}"`);
 console.log(`La división de "${valorA}" / "${valorB}" = "${valorB !== 0 ? (valorA / valorB) : 'indefinida (división por 0)'}"`);
+ */
+
+console.log(`Tu numero es: ${num1}`);
