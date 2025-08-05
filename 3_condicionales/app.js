@@ -1,37 +1,46 @@
 ///Soliticar datos al usuario
-let nombre = prompt("¿Cuál es tu nombre?");
-let edad = prompt("¿Cuál es tu edad?");
+/* let nombre = prompt("Ingresa tu nombre:");
+let edad = parseInt(prompt("Ingresa tu edad:"));
 
-//Validar si el usuario es mayor de edad y si puede ingresar al bar 
+// Verificar si puede ingresar a la discoteca
 if (edad >= 18) {
-    alert("Bienvenido " + nombre + ", eres mayor de edad, puedes ingresar al bar.");
+  alert("Puede ingresar a la discoteca.");
+
+  // Verificar si puede ingresar a VIP
+  if (nombre === "Carlos" || nombre === "Mario") {
+    alert("Puede ingresar a VIP.");
+  }
+
 } else {
-    alert("Lo siento " + nombre + ", eres menor de edad, no puedes ingresar al bar.");
+  // Si es menor de edad, no puede ingresar a nada
+  alert("No puede ingresar a la discoteca ni a la zona VIP.");
 }
-
-//Verificar si puede entrar a VIP
-if (nombre === "Mario" || nombre === "Carlos") {
-    alert("Felicidades , puedes entrar a la zona VIP.");
-}
-
-else {
-    alert("Lo siento , no puedes entrar a la zona VIP.");
-}
+ */
 
 
 
 
 
 
-/* //Pedir datos al usuario
+
+
+// Pedir datos al usuario
 let nombre = prompt("¿Cuál es tu nombre?");
 let estatura = parseInt(prompt("¿Cuál es tu estatura en cm?"));
 let velocidad = parseInt(prompt("¿Cuál es tu velocidad en km/h?"));
 let edad = parseInt(prompt("¿Cuál es tu edad en años?"));
 
-//Validar si el usuario cumple con la estatura y la velocidad para ingresar al equipo
+// Validar si el usuario cumple con la estatura y velocidad
 if (estatura >= 170 && velocidad >= 27) {
-    alert("Felicidades " + nombre + ", cumples con los requisitos para ingresar al equipo.");
+  alert("Felicidades, cumples con los requisitos para ingresar al equipo.");
+
+  // Verificar edad para determinar división
+  if (edad < 18) {
+    alert("Eres menor de edad, puedes ingresar a la división juvenil.");
+  } else {
+    alert("Eres mayor de edad, puedes ingresar a la división adulta.");
+  }
+
 } else {
-    alert("Lo siento " + nombre + ", no cumples con los requisitos para ingresar al equipo.");
-}  */
+  alert("Lo siento, no cumples con los requisitos para ingresar al equipo.");
+}
