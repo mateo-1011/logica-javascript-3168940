@@ -22,12 +22,21 @@ let pelicula = {
 console.log( pelicula.director ) */
 
 
-/* //Pedir número al usuario usando while 
+/*  //1. Pedir número al usuario usando while 
 let numero = 0; 
 while (numero <= 0) {
     numero = parseInt(prompt("Ingrese un número mayor a 0: "));
         console.log("Gracias, el número ingresado es: " + numero);
-    }
+    } */
+ 
+        
+/* let limite = parseInt(prompt("Ingrese el número límite"));
+let contador = 1;
+
+while (contador <= limite) {
+  console.log(contador);
+  contador++;
+}
  */
 
 
@@ -36,8 +45,7 @@ while (numero <= 0) {
 
 
 
-
-/* //Pedir al usuario un número límite y mostrar los números del 1 al número límite ingresado
+/* // 2. Pedir al usuario un número límite y mostrar los números del 1 al número límite ingresado
 let limite = parseInt(prompt("Ingrese el número límite: "));
 
 //Mostar los miltiplos de 5 del 1 al número límite ingresado
@@ -64,9 +72,9 @@ do {                         //Ejecuta el bloque primero y luego evalua la condi
 
 
 
-/* //Programa que imprime los números impares de 1 
+/* //Programa que imprime los números impares de 1 al 50
 
-for (let i = 1; i <= 100; i++) {  //Inicio bucle desde 1 hasta 100
+for (let i = 1; i <= 50; i++) {  //Inicio bucle desde 1 hasta 50
   if (i % 2 !== 0) { //Verifico si es impar
     console.log(i);
   }
@@ -97,10 +105,16 @@ for (let i = 1; i <= 100; i++) {  //Inicio del bucle
             console.log(i); //Imprimo el número si no está en el rango
         }
     }
- 
+  
 
 
 
+/* // cree un ciclo for que imprima la tabla de multiplicar del 7 
+console.log("Tabla de multiplicar del 7:");
+for (let i = 1; i <= 10; i++) {   //bucle se repita mientras sea menor o igual que 10
+  console.log("7 x " + i + " = " + (7 * i));
+}
+ */
 
 
 
