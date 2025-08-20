@@ -1,3 +1,5 @@
+// TALLER MATEO VARELAS Y JIMENA HERNANDEZ 
+
 /*   // 1. Leer numero, imprimir y decir si es positivo o negativo 
 let numero = parseFloat (prompt("Ingrese un número:"));
 console.log("El número ingresado es: " + numero);
@@ -129,40 +131,64 @@ if (resultado !== undefined) {
 } */
 
 
-/* // 10. 
+/* // 10: Mayor, menor y medio.
 
+// Pedimos los 3 números
 let num1 = parseFloat(prompt("Ingrese el primer número:"));
 let num2 = parseFloat(prompt("Ingrese el segundo número:"));
 let num3 = parseFloat(prompt("Ingrese el tercer número:"));
 
-// Guardamos en array
-let numeros = [num1, num2, num3];
+let mayor, medio, menor;
 
-// Ordenamos el array 
-numeros.sort((a, b) => a - b);
-
-let menor = numeros[0];
-let medio = numeros[1];
-let mayor = numeros[2];
-
-console.log("El número menor es:", menor);
-console.log("El número medio es:", medio);
-console.log("El número mayor es:", mayor);
-
-
-// Si hay número iguales
-if (num1 === num2 && num2 === num3) {
-    console.log("Los tres números son iguales:", num1);
-} else if (num1 === num2 || num1 === num3 || num2 === num3) {
-    if (num1 === num2) {
-        console.log("El número", num1, "se repite dos veces.");
-    } else if (num1 === num3) {
-        console.log("El número", num1, "se repite dos veces.");
-    } else if (num2 === num3) {
-        console.log("El número", num2, "se repite dos veces.");
+// Comparamos 
+if (num1 >= num2 && num1 >= num3) {
+    mayor = num1;
+    if (num2 >= num3) {
+        medio = num2;
+        menor = num3;
+    } else {
+        medio = num3;
+        menor = num2;
+    }
+} else if (num2 >= num1 && num2 >= num3) {
+    mayor = num2;
+    if (num1 >= num3) {
+        medio = num1;
+        menor = num3;
+    } else {
+        medio = num3;
+        menor = num1;
+    }
+} else {
+    mayor = num3;
+    if (num1 >= num2) {
+        medio = num1;
+        menor = num2;
+    } else {
+        medio = num2;
+        menor = num1;
     }
 }
+
+// Mostramos resultados
+console.log("El número mayor es:", mayor);
+console.log("El número medio es:", medio);
+console.log("El número menor es:", menor);
+
+// Verificamos si hay iguales
+if (num1 === num2 && num2 === num3) {
+    console.log("Los tres números son iguales:", num1, "y aparece 3 veces.");
+} else if (num1 === num2 && num1 !== num3) {
+    console.log("El número", num1, "se repite 2 veces.");
+} else if (num1 === num3 && num1 !== num2) {
+    console.log("El número", num1, "se repite 2 veces.");
+} else if (num2 === num3 && num2 !== num1) {
+    console.log("El número", num2, "se repite 2 veces.");
+} else {
+    console.log("No hay números repetidos.");
+}
  */
+ 
 
 
 /* // 11.
@@ -226,7 +252,7 @@ let nombre;
 
 //ciclo while que se repite hasta que el usuario escriba "salir"
 while (true) {
-    nombre = prompt("Ingrese un nombre (o escriba 'salir' para terminar):");
+    nombre = prompt("Ingrese un nombre (en caso de terminar escriba 'salir' para terminar):");
 
     if (nombre.toLowerCase() === "salir") {
         break; 
@@ -242,7 +268,7 @@ console.log("Lista de nombres ingresados:", nombres);
  */
 
 
-// 15. JUEGO
+/* // 15. JUEGO
 
 let correcto = false;
 
@@ -260,9 +286,16 @@ do {
     }
 
 } while (!correcto);
+ */
 
 
+//Ejercicio extra 
 
+// Cree un array de 8 frutas y con ayuda del ciclo for imprímalos en pantallana en una lista numerada
 
+let frutas = ["Manzana", "Banana", "Naranja", "Fresa", "Kiwi", "Mango", "Pera", "Uva"];
 
+for (let i = 0; i < frutas.length; i++) {
+    console.log((i + 1) + ". " + frutas[i]);
+}
 
