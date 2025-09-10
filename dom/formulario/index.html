@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <div id="login">
+    <form id="formulario">
+      <h1>FORMULARIO</h1>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+    <br><br>
+
+    <label for="color">Color</label>
+    <select id="color">
+      <option value="">Selecciona un color</option>
+      <option value="red">Rojo</option>
+      <option value="blue">Azul</option>
+      <option value="green">Verde</option>
+      <option value="yellow">Amarillo</option>
+    </select>
+    <br><br>
+
+    <h2>Elige un equipo</h2>
+
+  
+    <input type="radio" id="gatos" name="equipo" value="gatos">
+    <label for="gatos">Gatos</label>
+
+    <input type="radio" id="mapaches" name="equipo" value="Mapaches">
+    <label for="mapaches">Mapaches</label>
+
+    <input type="radio" id="perros" name="equipo" value="perros">
+    <label for="perros">Perros</label>
+
+    <br><br>
+    <input type="submit" value="Enviar">
+  </form>
+  </div>
+  
+  <div id="resultado"></div>
+
+
+<div id="userPage">
+  <img id="img-equipo" src="" alt="">
+  <h1 id="text-saludo">Hola Usuario</h1>
+  <p>Perteneces al equipo <span class="text-equipo">Mapaches</span></p>
+  <button id="logout" type="button">Cerrar sesión</button>
+
+</div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

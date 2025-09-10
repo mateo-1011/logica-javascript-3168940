@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: rgb(56, 188, 228);
+}
+
+label, p {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"], select {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(73, 73, 153);
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#userPage {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+#logout {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#logout:hover {
+  background-color: #c12e2a;
+}
+

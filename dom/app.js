@@ -8,9 +8,16 @@ function incrementar() {
     pantalla.textContent = ++contador;
 
     if (contador >= 10) {
-    pantalla.style.color = 'red';
+    pantalla.style.color = 'purple';
     pantalla.textContent =  contador
   } 
+
+  if (contador >= 30) {
+    document.body.style.backgroundColor= 'red'
+  } else {
+    document.body.style.backgroundColor= ''
+  }
+  
 }
 
 
@@ -21,6 +28,13 @@ function decrementar() {
     pantalla.style.color = 'black';
     pantalla.textContent =  contador
   }
+
+    if (contador >= 30) {
+    document.body.style.backgroundColor= 'red'
+  } else {
+    document.body.style.backgroundColor= ''
+  }
+  
 }
 
 
