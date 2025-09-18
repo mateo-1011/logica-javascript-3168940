@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ej1 Scroll Javascript</title>
+	<style>
+
+		*{
+			margin:0;
+			padding: 0;
+		}
+
+		#container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+		}
+
+		#main{
+			width: 300px;
+			height: 300px;
+			background: tomato;
+			overflow: auto;
+			
+		}
+
+		#child{
+			width: 600px;
+			height: 600px;
+		}
+
+		#datoValor{
+			position: fixed;
+			font-size: 2em;
+			margin: 10px;
+		}
+
+		#pelota{
+			position: absolute;
+			border: 2px solid black;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			top: 50px;
+			left: 50px;
+			background-color: blueviolet;
+		}
+
+	</style>
+</head>
+<body>
+
+
+<!--<button onclick="miFuncion()">Llevar</button>-->
+
+<div id="container">
+	<div id="main">
+		<div id="child">
+			<div id="datoValor">
+				<p class="valor-vertical">V: 0</p>
+				<p class="valor-horizontal">H: 0</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="pelota"></div>
+
+
+
+<script src="app_01.js"></script>
+</body>
+</html>
